@@ -23,7 +23,7 @@ class AddCharacterActions {
         }).done((data) => {
             this.actions.addCharacterSuccess(data.message);
         }).fail((jqXhr) => {
-            this.actions.addCharacterFail(jqXhr.responseJSON.message);
+	        this.actions.addCharacterFail(jqXhr.responseJSON.message);
         });
     }
 }
